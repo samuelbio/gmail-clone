@@ -1,0 +1,7 @@
+{
+  "name": "Gmail_clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
