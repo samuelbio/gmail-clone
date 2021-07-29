@@ -8,8 +8,50 @@ ion-content {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--ion-color-secondary);
         color: #e4e4e4;
         font-weight: 500;
         text-transform: capitalize;
     }
+
+    .search-overlay {
+        margin: 20px;
+        width: 90%;
+        background: #fff;
+
+        ion-row {
+            box-shadow: 0px 2px 3px 0px rgba(0 0 0 / 15%);
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        
+        ion-avatar {
+            ion-img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+
+    ion-refresher {
+        margin-top: 120px;
+    }
+
+    ion-list {
+        margin-top: 80px;
+    }
+
+    .email {
+        margin-bottom: 6px;
+
+        .excerpt {
+            padding-top: 4px;
+        }
+
+        .date {
+            font-size: small;
+        }
+    }
+
 }

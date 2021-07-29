@@ -1,9 +1,48 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>account</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar  class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-button (click)="close()" fill="clear" color="dark">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <img src="./../../../assets/logo.png" alt="logo" [style.width]="'70px'">
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img [src]="'https://firebasestorage.googleapis.com/v0/b/fieldmonitor-app.appspot.com/o/IMG_4289.jpg?alt=media&token=8d16565b-0ae8-4ee5-b463-5da1f78020aa'" />
+    </ion-avatar>
+    <ion-label>
+      Samuel BIO
+      <p>biosamuel7@gmail.com</p>
+    </ion-label>
+  </ion-item>
+  <ion-button expand="block" fill="outline" shape="round" color="dark" class="ion-padding">
+    Manage your google account
+  </ion-button>
 
+  <ion-item lines="none" class="ion-margin-top">
+    <ion-icon name="person-add-outline" slot="start"></ion-icon>
+    Add another account
+  </ion-item>
+
+  <ion-item lines="none" class="ion-margin-bottom">
+    <ion-icon name="person-outline" slot="start"></ion-icon>
+    Manage account on this device
+  </ion-item>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6" class="ion-text-right">
+        Privacy policy
+      </ion-col>
+      <ion-col size="6" class="ion-text-left">
+        Terms of service
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
